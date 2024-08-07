@@ -1,0 +1,44 @@
+.bottom{
+    margin-top: 2%;
+}
+#conn{
+    text-align: center;
+    color:white;
+    padding-top: 2%;
+}
+.fa-brands{
+    color:white;
+    padding:0% 3%;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:2% 0%;
+}
+
+/* Adding Animation */
+#first, #second, #third {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: floatIn 1s forwards;
+}
+
+#first {
+    animation-delay: 0.5s;
+}
+
+#second{
+    animation-delay: 1.5s;
+}
+
+#third{
+    animation-delay: 2.5s;
+}
+
+@keyframes floatIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
